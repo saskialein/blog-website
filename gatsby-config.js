@@ -1,17 +1,31 @@
+const { createFilePath } = require("gatsby-source-filesystem")
+
+exports.onCreateNode = args => {
+  const { actions, node } = args
+  if (node.internal.type === "MarkdownRemark") {
+    const { createNodeField } = actions
+    const value = createFilePath({ node, getNode })
+    createNodeField({
+      name: `slug`,
+      node,
+      value,
+    })
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: `Saskia's Blog`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `A little blog about my progress as a Web Developer`,
+    author: `Saskia Leinberger`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-catch-links',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages'
+        path: `${__dirname}/src/markdown-pages`,
+        name: 'markdown-pages'
       }
     },
     'gatsby-transformer-remark',
