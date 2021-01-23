@@ -7,6 +7,6 @@
 <h1 align="center">
   My first Gatsby Project
 </h1>
-This is a simple blog website created with the Gatsby default boilerplate. 
-The posts are queried with GraphQL from markdown files.
+This is a simple blog website created with the Gatsby default boilerplate. <br />
+The single posts are queried with GraphQL from markdown files.
 
