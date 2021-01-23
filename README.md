@@ -10,4 +10,4 @@ This is a simple blog website created with the Gatsby default boilerplate. <br /
 The single posts are queried with GraphQL from markdown files.
 <br />
 <br />
-<p style="italic">The styling of this page is still in progress.</p>
+*The styling of this page is still in progress.
