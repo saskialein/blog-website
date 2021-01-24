@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 const ServicesPage = () => (
   <Layout>
     <div>
-      <h1>Our Services</h1> 
+      <h2>Here is how you can get in contact with me:</h2> 
         <p>
         Lorem ipsum dolor sit amet consecutor adipiscing elit.
         Perferendis adipisci. voluptatum, nisi velit praesentium error quia explicabo
