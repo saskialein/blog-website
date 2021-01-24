@@ -11,4 +11,4 @@ The single posts are queried with GraphQL from markdown files.
 <br />
 <br />
 
-*The styling of this page is still in progress.*
+*The development of this page is still in progress.*
