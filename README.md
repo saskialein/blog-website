@@ -27,6 +27,8 @@ The single posts are queried with GraphQL from markdown files.
 * Deploying to Netlify
 * There is a pretty cool browser tool called GraphiQL that helps to structure GraphQL queries. It can be accessed in the browser while the websites development server is running. ```http://localhost:8000/___graphql```
 * I can use HTML & CSS in markdown
+* UI trend: Glassmorphism
+* Creating my own Avatar with the [avataaars generator](https://getavataaars.com)
 
 ### 🤦‍♀️-Moments
 * Typos in CSS class names
