@@ -15,7 +15,7 @@ exports.onCreateNode = args => {
 
 module.exports = {
   siteMetadata: {
-    title: `Saskia's Blog`,
+    title: `Saskia's Website`,
     description: `A little blog about my progress as a Web Developer`,
     author: `Saskia Leinberger`,
   },

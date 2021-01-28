@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+.Container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Glass {
+    display: block;
+    width: 70vw;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    padding: 50px;
+    /* border: 1px solid rgb(235, 233, 233);
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.5) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px); */
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 40px;
+}
+
+.NavBar {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px solid #fff;
+}
+
+.NavBrand {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #fff;
+    border-right: 2px solid #fff; 
+}
+
+.NavItems {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.NavItem {
+    display: inline-block;
+    margin: 15px;
+    font-size: 1.5rem;
+    /* font-weight: normal; */
+    text-align: center;
+    line-height: 1;
+}
+
+.NavItemLink {
+    color: inherit;
+    
+}
+
+.NavItemLink:hover,
+.Active {
+    transition: color .5s ease-out;
+    color: #42275a;
+}
+
+/* .Active {
+    background-color: black;
+    background-image: -webkit-linear-gradient(#42275a, #72436b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+} */
+
+.NavItemLink:focus {
+    outline-offset: 1px;
+}
+
+.Main {
+    font-weight: normal;
+    display: flex;
+    justify-content: space-around;
+}
+
+.TextWrapper {
+    display: block;
+    float: left;
+    margin-top: 5vh;
+}
+
+.MainTitle {
+    font-size: 35px;
+}
+
+.MainDescription {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.BtnBoost {
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 1px solid rgb(235, 233, 233);
+    cursor: pointer;
+}
+
+.ImgWrapper {
+    display: flex;
+    float: right;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.IconWrapper {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+
+.GithubIcon {
+    width: 45px;
+    height: auto;
+    filter:  brightness(0) invert(1);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .NavBar {
+        display: none;
+    }
+
+    .FeatImg {
+        display: none;
+        align-items: center;
+    }
+
+    .Glass {
+        margin-top: 20vh;
+        padding: 25px;
+    }
+
+    .Main {
+        margin-top: 5vh;
+    }
+
+    .MainTitle {
+        font-size: 30px;
+    }
+}
