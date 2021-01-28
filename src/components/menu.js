@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "gatsby"
 
 import SEO from "../components/seo"
-import classes from './layout.module.css'
+import classes from './Layout.module.css'
 
 const Menu = () => (
     <nav className={classes.NavBar}>
