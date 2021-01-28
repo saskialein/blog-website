@@ -36,6 +36,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // {
+    //   resolve: `gatsby-source-openweathermap`,
+    //   options: {
+    //     apikey: 'ebfbb04818fee9523dfbe461b9445a30',
+    //     q: 'Wellington',
+    //     units: 'metric',
+    //     type: 'forecast'
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
