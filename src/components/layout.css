@@ -12,7 +12,11 @@ body {
   color: #fff;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: normal;
-  background: linear-gradient(to left, #9d33f3, #8d33f3);
+  /* background: linear-gradient(to right, #c31432, #240b36); */
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  /* background: linear-gradient(to right, #200122, #6f0000); */
+  background-image: linear-gradient(to right, #42275a, #734b6d);
+  /* background-image: linear-gradient(to right, #000428, #004e92); */
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;

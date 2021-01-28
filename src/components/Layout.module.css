@@ -14,11 +14,17 @@
     margin-top: 10vh;
     margin-bottom: 30px;
     padding: 50px;
-    border: 1px solid rgb(235, 233, 233);
+    /* border: 1px solid rgb(235, 233, 233);
     background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.5) -1.83%, rgba(255, 255, 255, 0) 109.95%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px); */
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 40px;
 }
 
@@ -49,17 +55,37 @@
 
 .NavItem {
     display: inline-block;
-    padding: 15px;
+    margin: 15px;
     font-size: 1.5rem;
-    font-weight: 100;
+    /* font-weight: normal; */
     text-align: center;
     line-height: 1;
 }
 
 .NavItemLink {
     color: inherit;
+    
 }
 
+.NavItemLink:hover,
+.Active {
+    transition: color .5s ease-out;
+    color: #42275a;
+}
+
+/* .Active {
+    background-color: black;
+    background-image: -webkit-linear-gradient(#42275a, #72436b);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+} */
+
+.NavItemLink:focus {
+    outline-offset: 1px;
+}
 
 .Main {
     font-weight: normal;

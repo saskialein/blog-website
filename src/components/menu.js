@@ -5,12 +5,12 @@ import classes from './layout.module.css'
 
 const Menu = () => (
     <nav className={classes.NavBar}>
-        <div className={classes.NavBrand}>Hello</div>
+        <div className={classes.NavBrand}>saskia</div>
             <ul className={classes.NavItems}>
-                <Link className={classes.NavItemLink} to='/'><li className={classes.NavItem}>Home</li></Link>
-                <Link className={classes.NavItemLink} to='/about'><li className={classes.NavItem}>About</li></Link>
-                <Link className={classes.NavItemLink} to='/blog'><li className={classes.NavItem}>Blog</li></Link>
-                <Link className={classes.NavItemLink} to='/contact'><li className={classes.NavItem}>Contact</li></Link>
+                <Link className={classes.NavItemLink}  activeClassName={classes.Active} to='/'><li className={classes.NavItem}>.home()</li></Link>
+                <Link className={classes.NavItemLink}  activeClassName={classes.Active} to='/about'><li className={classes.NavItem}>.about()</li></Link>
+                <Link className={classes.NavItemLink}  activeClassName={classes.Active} to='/blog'><li className={classes.NavItem}>.blog()</li></Link>
+                <Link className={classes.NavItemLink}  activeClassName={classes.Active} to='/contact'><li className={classes.NavItem}>.contact()</li></Link>
             </ul>
     </nav>
 )
