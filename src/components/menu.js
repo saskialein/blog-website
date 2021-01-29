@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
 
-import SEO from "../components/seo"
 import classes from './Layout.module.css'
 
 const Menu = () => (

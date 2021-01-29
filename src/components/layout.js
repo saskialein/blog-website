@@ -2,13 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Menu from "../components/menu"
+
 import "./layout.css"
 import classes from './Layout.module.css'
 
 const Layout = ({ children }) => {
 
   return (
-    <div className={classes.Container}>
+    <div className={classes.Container}> 
       <div className={classes.Glass}>
         <Menu/>
           <main className={classes.Main}>
