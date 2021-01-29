@@ -17,12 +17,14 @@ The single posts are queried with GraphQL from markdown files.
 * Gatsby
 * CSS Modules
 * GraphQL
+* OpenWeatherAPI
 * Netlify deployed
 
 ## New stuff I have learned from this project
 * Creating a website with Gatsby (default boilerplate)
 * Querying data from markdown files with GraphQL
 * Npm modules: ```gatsby-source-filesystem``` (allows us to work with data from our computer's filesystem) & ```gatsby-transformer-remark``` (transforms markdown into HTML)
+* Calling data from OpenWeatherAPI and returning it on my website (using SuperAgent)
 * Styling components with CSS Modules
 * Deploying to Netlify
 * There is a pretty cool browser tool called GraphiQL that helps to structure GraphQL queries. It can be accessed in the browser while the websites development server is running. ```http://localhost:8000/___graphql```
