@@ -1,4 +1,7 @@
 const { createFilePath } = require("gatsby-source-filesystem")
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 exports.onCreateNode = args => {
   const { actions, node } = args

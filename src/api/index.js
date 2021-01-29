@@ -1,9 +1,10 @@
 import request from 'superagent'
 
-const weatherURL = 'http://api.openweathermap.org/data/2.5/weather?q=Wellington,nz&APPID=ebfbb04818fee9523dfbe461b9445a30'
+const APIKey = process.env.GATSBY_OPEN_WEATHER_API_KEY
 
-export function getWeather(){
+
+export function getWeather(lon, lat){
     return request  
-      .get(weatherURL)
+      .get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&api.openweathermap.org/data/2.5/find?q=London&units=metric&appid=${APIKey}`)
       .then(response => response.body)
   }
