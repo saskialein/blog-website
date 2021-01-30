@@ -1,4 +1,4 @@
-// import request from 'superagent'
+import request from 'superagent'
 
 const APIKey = process.env.GATSBY_OPEN_WEATHER_API_KEY
 
