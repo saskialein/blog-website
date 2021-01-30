@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://saskia-leinberger.netlify.app/">
+    <img alt="Saskia's Website" src="https://saskia-leinberger.netlify.app/static/avataaars-a8635d2aa1464ed854f33b16708adf8c.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -26,7 +26,7 @@ The single posts are queried with GraphQL from markdown files.
 * Npm modules: ```gatsby-source-filesystem``` (allows us to work with data from our computer's filesystem) & ```gatsby-transformer-remark``` (transforms markdown into HTML)
 * Calling data from OpenWeatherAPI and returning it on my website (using SuperAgent)
 * Styling components with CSS Modules
-* Deploying to Netlify
+* Deploying to Netlify (with an external API call using an API Key)
 * There is a pretty cool browser tool called GraphiQL that helps to structure GraphQL queries. It can be accessed in the browser while the websites development server is running. ```http://localhost:8000/___graphql```
 * I can use HTML & CSS in markdown
 * UI trend: Glassmorphism
@@ -35,3 +35,4 @@ The single posts are queried with GraphQL from markdown files.
 ### 🤦‍♀️-Moments
 * Typos in CSS class names
 * VS-Code auto-completing CSS properties with the wrong property (It put ```background-color``` instead of ```background```. Took me a wee while to find...)
+* Accidentally exposed my API Key on my GitHub account because I coded until late and got very tired
