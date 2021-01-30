@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import classes from './Layout.module.css'
 
+
 const Menu = () => (
     <nav className={classes.NavBar}>
         <div className={classes.NavBrand}>saskia</div>

@@ -23,12 +23,9 @@ class IndexPage extends React.Component {
                   <p className={classes.MainDescription}>
                     I am a Full-Stack Web Developer.
                   </p>
-                  {/* <Link to='#'>
-                    <button className={classes.BtnBoost}>Get Started</button>
-                  </Link> */}
               </div>
               <div className={classes.ImgWrapper}>
-                <img className={classes.FeatImg} loading="lazy" style={{ width: '350px' }} src={avatar} alt='Avatar' />
+                <img className={classes.FeatImg} loading="lazy" src={avatar} alt='Avatar' />
               </div>
               <div className={classes.IconWrapper}>
                 <a href="https://github.com/saskialein" rel="noreferrer" target="_blank"><img className={classes.GithubIcon} loading="lazy" style={{width: '45px'}} src={githubIcon} alt='Github icon with link to github profile'/></a>

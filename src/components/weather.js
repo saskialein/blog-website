@@ -72,17 +72,17 @@ class Weather extends React.Component {
         return (
             this.state.geolocationTurnedOn && this.state.weather && this.state.temperature ?
             <div className={classes.WeatherContainer}>
-                    <hr className={ classes.Left}/>
+                    <hr className={ [classes.LineBreakOne, classes.LineBreak].join(' ')}/>
                     {getGreeting()}
-                    <hr/>
+                    <hr className={ [classes.LineBreak, classes.LineBreakTwo].join(' ')}/>
                     <p>
                         Your current weather in&nbsp;<span className={classes.Italic}>{this.state.city}, {this.state.country.country}:&nbsp;</span> <span className={classes.WeatherData}>{this.state.weather.description}</span>.
                     </p> 
-                    <hr />
+                    <hr className={ [classes.LineBreak, classes.LineBreakThree].join(' ')}/>
                     <p>
                         The actual temperature is&nbsp;<span className={classes.WeatherData}>{Number.parseFloat(this.state.temperature.temp).toFixed(1)} ℃</span>, but it feels more like&nbsp;<span className={classes.WeatherData}>{Number.parseFloat(this.state.temperature.feels_like).toFixed(1)} ℃</span>.
                     </p>
-                    <hr />
+                    <hr className={ [classes.LineBreak, classes.LineBreakFour].join(' ')} />
                 </div> : <div className={classes.WeatherContainer}>
                     <p className={classes.Italic}>If you turn on your location, your current weather will be displayed here.</p>
                 </div>

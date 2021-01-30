@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Menu from "../components/menu"
 
-import "./layout.css"
+import "../styles/global.css"
 import classes from './Layout.module.css'
 
 const Layout = ({ children }) => {

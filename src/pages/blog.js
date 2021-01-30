@@ -3,6 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import classes from './Blog.module.css'
 
 const BlogPage = ({data}) => (
   <Layout>
@@ -14,9 +15,11 @@ const BlogPage = ({data}) => (
                 <h3>{post.node.frontmatter.title}</h3>
                   <small>Posted by {post.node.frontmatter.author} on {post.node.frontmatter.date}</small>  
                   <br />
-                  <br />
-                  <Link to={post.node.frontmatter.path}>Read More</Link>
-                  <br />
+            <br />
+            <div className={classes.BtnWrapper}>
+                  <Link to={post.node.frontmatter.path} className={classes.Link}> <button className={classes.BtnRead}>Read more</button></Link>
+              </div>   
+              <br />
                   <br />
                   <hr />
             </div>

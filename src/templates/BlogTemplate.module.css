@@ -1,0 +1,38 @@
+.BtnWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.BtnBack {
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 12px 12px 20px -5px rgba(0, 0, 0, 0.2),
+                -12px -12px 20px -5px rgba(155, 117, 149, 0.5);
+    border-radius: 40px;
+    width: fit-content;
+    height: 50px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.BtnText {
+    padding: 0 15px;
+}
+
+.Link {
+    text-decoration: none;
+}
+
+.BtnBack:hover,
+.BtnBack:active {
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+                inset -6px -6px 10px 0 rgba(155, 117, 149, 0.5);
+    color: #42275a;
+    font-weight: bold;
+}

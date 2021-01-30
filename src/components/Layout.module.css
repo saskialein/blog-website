@@ -10,17 +10,13 @@
 
 .Glass {
     display: block;
-    width: 70vw;
-    margin-top: 10vh;
+    max-width: 50vw;
+    width: 50vw;
+    margin-top: 4vh;
     margin-bottom: 30px;
     padding: 50px;
-    /* border: 1px solid rgb(235, 233, 233);
-    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.5) -1.83%, rgba(255, 255, 255, 0) 109.95%);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px); */
     background: rgba( 255, 255, 255, 0.15 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 12px 12px 20px -5px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
@@ -78,7 +74,7 @@
 .Main {
     font-weight: normal;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .TextWrapper {
@@ -96,25 +92,16 @@
     line-height: 25px;
 }
 
-.BtnBoost {
-    margin-top: 10px;
-    width: 120px;
-    height: 50px;
-    font-size: 20px;
-    color: #fff;
-    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
-    box-shadow: 50px 60px 100px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-    font-family: 'Roboto Condensed', sans-serif;
-    border: 1px solid rgb(235, 233, 233);
-    cursor: pointer;
-}
-
 .ImgWrapper {
     display: flex;
     float: right;
     margin-bottom: 2rem;
     margin-top: 1rem;
+}
+
+.FeatImg {
+    width: 350px;
+    height: auto;
 }
 
 .IconWrapper {
@@ -155,37 +142,72 @@
     font-style: italic;
 }
 
-hr {
+.LineBreak {
     margin-right: 10px;
     height: 25px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.Left {
+.LineBreakOne {
     margin-left: 10px;
+    height: 25px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 951px) {
     .NavBar {
         display: none;
     }
 
     .FeatImg {
-        display: none;
         align-items: center;
+        width: 200px;
     }
 
     .Glass {
-        margin-top: 20vh;
+        margin-top: 10vh;
         padding: 25px;
     }
 
     .Main {
-        margin-top: 5vh;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
     .MainTitle {
         font-size: 30px;
+    }
+
+    .WeatherContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .WeatherContainer p {
+        font-size: .8rem;
+        /* display: flex;
+        justify-content: center; */
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+    .LineBreakFour {
+        display: none;
+    }
+
+    .LineBreakOne{
+        height: 0;
+        width: 34vh;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .LineBreakTwo,
+    .LineBreakThree {
+        height: 0;
+        width: 10vw;
+        margin: 0 auto;
     }
 }
