@@ -15,7 +15,7 @@ export default function Template({data}) {
           <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
           <div className={classes.BtnWrapper}>    
             <Link to='/blog' >
-              <button className={classes.BtnBack}><soan className={classes.BtnText}>Back to post overview</soan></button>
+              <button className={classes.BtnBack}><span className={classes.BtnText}>Back to post overview</span></button>
             </Link>
         </div>
       </div>
