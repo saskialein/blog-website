@@ -11,7 +11,7 @@ The single posts are queried with GraphQL from markdown files.
 <br />
 <br />
 
-*The development of this page is still in progress.*
+*The development of this page is still in progress... And the design will most likely change as well.*
 
 ## Technologies
 * Gatsby
