@@ -40,6 +40,12 @@ module.exports = {
       },
     },
     // {
+    //   resolve: `gatsby-plugin-tawk`,
+    //   options: {
+    //     tawkId: "https://embed.tawk.to/604541251c1c2a130d65f804/1f078cuue",
+    //   },
+    // },
+    // {
     //   resolve: `gatsby-source-openweathermap`,
     //   options: {
     //     apikey: 'ebfbb04818fee9523dfbe461b9445a30',

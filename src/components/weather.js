@@ -66,7 +66,7 @@ class Weather extends React.Component {
         let weather =   (<div className={classes.WeatherContainer}>
                             <p className={classes.Italic}>Loading...</p>
                         </div>)
-        if (this.state.geolocationTurnedOn) {
+        if (!this.state.geolocationTurnedOn) {
             weather =   (<div className={classes.WeatherContainer}>
                             <p className={classes.Italic}>If you turn on your location, your current weather will be displayed here.</p>
                         </div>)
