@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from 'react-helmet'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -11,28 +12,45 @@ import githubIcon from '../images/github.svg'
 class IndexPage extends React.Component {
 
   render() {
+    let s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]
     return (
-      <div> 
-          <Layout>
-            <SEO title="Home" />
-              <div className={classes.TextWrapper}>
-                <h2 className={classes.MainTitle}>
-                  Hi people, <br />
+      <div>
+        <Layout>
+          <SEO title="Home" />
+          <Helmet>
+            <body>
+              <script type="text/javascript">
+                var Tawk_API=Tawk_API||{ }, Tawk_LoadStart=new Date();
+                (function(){
+                  s1.async = true,
+                  s1.src = 'https://embed.tawk.to/604541251c1c2a130d65f804/1f078cuue',
+                  s1.charset = 'UTF-8',
+                  s1.setAttribute('crossorigin', '*'),
+                  s0.parentNode.insertBefore(s1, s0)
+                })();
+              </script>
+            </body>
+          </Helmet>
+          <div className={classes.TextWrapper}>
+            <h2 className={classes.MainTitle}>
+              Hi people, <br />
                   Welcome to my Website.
                 </h2>
-                  <p className={classes.MainDescription}>
-                    I am a Full-Stack Web Developer.
+            <p className={classes.MainDescription}>
+              I am a Full-Stack Web Developer.
                   </p>
-              </div>
-              <div className={classes.ImgWrapper}>
-                <img className={classes.FeatImg} loading="lazy" src={avatar} alt='Avatar' />
-              </div>
-              <div className={classes.IconWrapper}>
-                <a href="https://github.com/saskialein" rel="noreferrer" target="_blank"><img className={classes.GithubIcon} loading="lazy" style={{width: '45px'}} src={githubIcon} alt='Github icon with link to github profile'/></a>
-              </div>
+          </div>
+          <div className={classes.ImgWrapper}>
+            <img className={classes.FeatImg} loading="lazy" src={avatar} alt='Avatar' />
+          </div>
+          <div className={classes.IconWrapper}>
+            <a href="https://github.com/saskialein" rel="noreferrer" target="_blank"><img className={classes.GithubIcon} loading="lazy" style={{ width: '45px' }} src={githubIcon} alt='Github icon with link to github profile' /></a>
+          </div>
         </Layout>
         <Weather />
+
       </div>
+
     )
   }
 }
