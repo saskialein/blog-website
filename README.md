@@ -18,6 +18,7 @@ The single posts are queried with GraphQL from markdown files.
 * CSS Modules
 * GraphQL
 * OpenWeatherAPI
+* [tawk.to](https://www.tawk.to/) live chat feature
 * Netlify deployed
 
 ## New stuff I have learned from this project
@@ -25,6 +26,7 @@ The single posts are queried with GraphQL from markdown files.
 * Querying data from markdown files with GraphQL
 * Npm modules: ```gatsby-source-filesystem``` (allows us to work with data from our computer's filesystem) & ```gatsby-transformer-remark``` (transforms markdown into HTML)
 * Calling data from OpenWeatherAPI and returning it on my website (using SuperAgent)
+* Implementing a live chat on my webiste and monitoring it with chat software
 * Styling components with CSS Modules
 * Deploying to Netlify (with an external API call using an API Key)
 * There is a pretty cool browser tool called GraphiQL that helps to structure GraphQL queries. It can be accessed in the browser while the websites development server is running. ```http://localhost:8000/___graphql```
